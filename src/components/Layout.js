@@ -15,6 +15,10 @@ const TemplateWrapper = ({ children }) => {
         <meta name="description" content={description} />
 
         <link
+          rel="stylesheet"
+          href="https://use.typekit.net/tep2pon.css"
+        />
+        <link
           rel="apple-touch-icon"
           sizes="180x180"
           href="/img/apple-touch-icon.png"
@@ -35,9 +39,9 @@ const TemplateWrapper = ({ children }) => {
         <link
           rel="mask-icon"
           href="/img/safari-pinned-tab.svg"
-          color="#ff4400"
+          color="#f9f8f7"
         />
-        <meta name="theme-color" content="#fff" />
+        <meta name="theme-color" content="#f9f8f7" />
 
         <meta property="og:type" content="business.business" />
         <meta property="og:title" content={title} />
@@ -45,7 +49,7 @@ const TemplateWrapper = ({ children }) => {
         <meta property="og:image" content="/img/og-image.jpg" />
       </Helmet>
       <Navbar />
-      <div>{children}</div>
+      <div style={{backgroundColor: "#f9f8f7"}}>{children}</div>
       <Footer />
     </div>
   )
