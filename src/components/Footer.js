@@ -30,11 +30,12 @@ const Footer = class extends React.Component {
                         Shop
                       </a>
                     </li>
-                    <li>
+                    {/* TO DO */}
+                    {/* <li>
                       <Link className="" to="/gallery">
                         Gallery
                       </Link>
-                    </li>
+                    </li> */}
                     <li>
                       <Link className="" to="/events/">
                         Events
@@ -46,11 +47,12 @@ const Footer = class extends React.Component {
               <div className="column is-4">
                 <section>
                   <ul className="menu-list">
-                    <li>
+                    {/* TO DO */}
+                    {/* <li>
                       <Link className="" to="/process">
                         Process
                       </Link>
-                    </li>
+                    </li> */}
                     <li>
                       <Link className="" to="/contact">
                         Contact

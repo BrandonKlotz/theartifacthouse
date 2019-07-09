@@ -1,8 +1,7 @@
 ---
 templateKey: index-page
-title: Handcrafted Ceramics
+title: Decor | Dinnerware | Jewelry
 image: /img/raw-pots-set.jpg
-heading: Timefully inspired art for the home.
 intro:
   blurbs:
     - image: /img/teal-pot.jpg
@@ -14,9 +13,8 @@ intro:
       alt: 'teal pot'
       text: >
         GALLERY
-      url: '/blog'
-      link: ''
-    - image: /img/clay-vase.jpg
+      link: 'https://instagram.com/theartifacthouse'
+    - image: /img/shop.jpg
       alt: 'teal pot'
       text: >
         EVENTS
@@ -26,7 +24,6 @@ intro:
       alt: 'teal pot'
       text: >
         PROCESS
-      url: '/process'
       link: ''
 main:
   heading: Great coffee with no compromises
