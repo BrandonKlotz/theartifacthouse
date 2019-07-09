@@ -24,7 +24,7 @@ intro:
       alt: 'teal pot'
       text: >
         PROCESS
-      link: ''
+      link: 'https://www.etsy.com/shop/TheArtifactHouse#about'
 main:
   heading: Great coffee with no compromises
   description: >
