@@ -9,22 +9,25 @@ intro:
       alt: 'teal pot'
       text: >
         SHOP
-      url: 'https://www.etsy.com/shop/TheArtifactHouse'
+      link: 'https://www.etsy.com/shop/TheArtifactHouse'
     - image: /img/meh-mugs.jpg
       alt: 'teal pot'
       text: >
         GALLERY
       url: '/blog'
+      link: ''
     - image: /img/clay-vase.jpg
       alt: 'teal pot'
       text: >
         EVENTS
       url: '/events'
+      link: ''
     - image: /img/teal-bronze-vase.jpg
       alt: 'teal pot'
       text: >
         PROCESS
       url: '/process'
+      link: ''
 main:
   heading: Great coffee with no compromises
   description: >

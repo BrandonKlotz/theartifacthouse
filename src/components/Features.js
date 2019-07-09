@@ -11,32 +11,61 @@ const FeatureGrid = ({ gridItems }) => (
       <div key={item.text} className="column is-6">
         <section className="section">
           <div className="has-text-centered">
-            <Link to={item.url}>
-              <div
-                className="feature-img"
-                style={{
-                  display: 'inline-block',
-                  position: 'relative',
-                  overflow: 'hidden'
-                }}
-              >
-                <PreviewCompatibleImage imageInfo={item} />
+            { item.url ?
+              <Link to={item.url}>
                 <div
-                  className="feature-label"
+                  className="feature-img"
                   style={{
-                    position: "absolute",
-                    top: "20px",
-                    left: "20px",
-                    padding: ".6em 1.2em .7em 1.2em",
-                    letterSpacing: "4px",
-                    backgroundColor: '#fff',
-                    textAlign: 'center'
+                    display: 'inline-block',
+                    position: 'relative',
+                    overflow: 'hidden'
                   }}
                 >
-                  {item.text}
+                  <PreviewCompatibleImage imageInfo={item} />
+                  <div
+                    className="feature-label"
+                    style={{
+                      position: "absolute",
+                      top: "20px",
+                      left: "20px",
+                      padding: ".6em 1.2em .7em 1.2em",
+                      letterSpacing: "4px",
+                      backgroundColor: '#fff',
+                      textAlign: 'center'
+                    }}
+                  >
+                    {item.text}
+                  </div>
                 </div>
-              </div>
-            </Link>
+              </Link>
+            :
+              <a href={item.link} target="_blank">
+                <div
+                  className="feature-img"
+                  style={{
+                    display: 'inline-block',
+                    position: 'relative',
+                    overflow: 'hidden'
+                  }}
+                >
+                  <PreviewCompatibleImage imageInfo={item} />
+                  <div
+                    className="feature-label"
+                    style={{
+                      position: "absolute",
+                      top: "20px",
+                      left: "20px",
+                      padding: ".6em 1.2em .7em 1.2em",
+                      letterSpacing: "4px",
+                      backgroundColor: '#fff',
+                      textAlign: 'center'
+                    }}
+                  >
+                    {item.text}
+                  </div>
+                </div>
+              </a>
+            }
           </div>
         </section>
       </div>
@@ -49,7 +78,8 @@ FeatureGrid.propTypes = {
     PropTypes.shape({
       image: PropTypes.oneOfType([PropTypes.object, PropTypes.string]),
       text: PropTypes.string,
-      url: PropTypes.string
+      url: PropTypes.string,
+      link: PropTypes.string
     })
   ),
 }
